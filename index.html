@@ -15,16 +15,33 @@
     <main>
         <h1>Conversor de Real e Dólar</h1>
 
-        <form id="form-conversao" novalidate></form>
+    <form id="form-conversao" novalidate></form>
         <label for="valor" id="rotulo-origem">Valor em reais (BRL)</label>
-        <input id="valor" type="text" inputmode="decimal" autocomplete="off" value="100"
+        <input id="valor" type="text" inputmode="decimal" autocomplete="off" 
         aria-describedby="ajuda-valor erro-valor">
 
         <p id="erro-valor" class="erro" role="alert" hidden></p>
 
+        <div class="botoes">
+            <button type="submit">Converter</button>
+            <button type="button" id="btn-inverter">Inverter direção</button>
+        </div>
+    </form>
+        <p class="rotulo" id="rotulo-destino">Valor em dólares (USD)</p>
+        <output id="resultado" for="valor" aria-live="polite">—</output>
 
+        <p id="cotacao-info" aria-live="polite">Buscando a cotação…</p>
     </main>
-    
+
+    <footer>
+        <h2>Créditos:</h2>
+        <ul>
+            <li>Cotações: <a href="https://docs.awesomeapi.com.br/api-de-moedas">AwesomeAPI</a></li>
+            <li>Máscara do campo de valor: <a href="https://imask.js.org/">IMask</a> (pacote JavaScript, licença MIT).</li>
+            <li>Fonte: <a href="https://fonts.google.com/specimen/Atkinson+Hyperlegible">Atkinson Hyperlegible</a>, SIL Open Font License 1.1 (Google Fonts).</li>
+        </ul>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/imask@7.6.1/dist/imask.min.js"></script>
     <script src="script.js"></script>
 </body>

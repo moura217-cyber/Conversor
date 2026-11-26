@@ -44,3 +44,33 @@ input[aria-invalid="true"] { border-color: var(--erro); }
 
 .botoes { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; }
 
+
+
+button {
+  padding: .7rem 1.2rem;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: var(--verde);
+  border: 2px solid var(--verde);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#btn-inverter { color: var(--verde); background: transparent; }
+
+:focus-visible { outline: 3px solid var(--tinta); outline-offset: 3px; }
+
+.erro { margin: .5rem 0 0; color: var(--erro); font-weight: 700; }
+
+output {
+  display: block;
+  margin-top: .25rem;
+  padding: .7rem .9rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: #fff;
+  border: 2px solid var(--tinta);
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
